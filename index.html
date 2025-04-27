@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anand Kishore Jha - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <header class="bg-indigo-600 text-white py-4">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center">
+                <h1 class="text-2xl font-semibold">Anand Kishore Jha</h1>
+                <nav class="hidden md:block">
+                    <ul class="flex space-x-6">
+                        <li><a href="#about" class="hover:text-indigo-300 transition duration-300">About</a></li>
+                        <li><a href="#skills" class="hover:text-indigo-300 transition duration-300">Skills</a></li>
+                        <li><a href="#experience" class="hover:text-indigo-300 transition duration-300">Experience</a></li>
+                        <li><a href="#projects" class="hover:text-indigo-300 transition duration-300">Projects</a></li>
+                        <li><a href="#contact" class="hover:text-indigo-300 transition duration-300">Contact</a></li>
+                    </ul>
+                </nav>
+                <button id="hamburger-btn" class="md:hidden text-white focus:outline-none" aria-label="Toggle Navigation">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div id="mobile-menu" class="hidden fixed top-0 left-0 w-full h-full bg-gray-900 bg-opacity-90 z-50">
+        <div class="bg-gray-800 w-80 h-full absolute right-0 p-6">
+            <div class="flex justify-end mb-4">
+                <button id="close-menu-btn" class="text-white focus:outline-none" aria-label="Close Menu">
+                    <i class="fas fa-times text-xl"></i>
+                </button>
+            </div>
+            <nav class="block">
+                <ul class="space-y-4">
+                    <li><a href="#about" class="block text-lg text-white hover:text-indigo-300 transition duration-300">About</a></li>
+                    <li><a href="#skills" class="block text-lg text-white hover:text-indigo-300 transition duration-300">Skills</a></li>
+                    <li><a href="#experience" class="block text-lg text-white hover:text-indigo-300 transition duration-300">Experience</a></li>
+                    <li><a href="#projects" class="block text-lg text-white hover:text-indigo-300 transition duration-300">Projects</a></li>
+                    <li><a href="#contact" class="block text-lg text-white hover:text-indigo-300 transition duration-300">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <section id="about" class="bg-gray-100 py-16">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center gap-8">
+                <div class="md:w-1/3">
+                    <img src="pic.png" alt="Anand Kishore Jha" class="rounded-full shadow-lg">
+                </div>
+                <div class="md:w-2/3">
+                    <h2 class="text-3xl font-semibold text-indigo-700 mb-4">About Me</h2>
+                    <p class="text-gray-700 text-lg">
+                        Enthusiastic and results-driven Machine Learning Engineer with over 3 years of experience in AI and ML.
+                        Skilled in developing AI solutions using Large Language Models (LLMs) and machine learning techniques
+                        to solve real-world problems. Experienced in building machine learning pipelines on AWS and optimizing
+                        models for performance.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="bg-indigo-50 py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-semibold text-indigo-700 mb-8 text-center">Skills</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg shadow-md p-6 flex items-center gap-4">
+                    <i class="fas fa-code text-indigo-500 text-2xl"></i>
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-800">Programming Languages</h3>
+                        <p class="text-gray-600">Python, Java, C++</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6 flex items-center gap-4">
+                    <i class="fas fa-brain text-indigo-500 text-2xl"></i>
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-800">Machine Learning</h3>
+                        <p class="text-gray-600">Algorithms, Deep Learning, Model Optimization</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6 flex items-center gap-4">
+                    <i class="fas fa-cloud text-indigo-500 text-2xl"></i>
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-800">Cloud Technologies</h3>
+                        <p class="text-gray-600">AWS (Bedrock, Sagemaker, Lambda, S3)</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6 flex items-center gap-4">
+                    <i class="fas fa-database text-indigo-500 text-2xl"></i>
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-800">Data Tools</h3>
+                        <p class="text-gray-600">SQL, NoSQL, Big Data</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6 flex items-center gap-4">
+                    <i class="fas fa-search text-indigo-500 text-2xl"></i>
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-800">LLMs</h3>
+                        <p class="text-gray-600">Retrieval-Augmented Generation (RAG), Fine-tuning</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6 flex items-center gap-4">
+                    <i class="fas fa-check-circle text-indigo-500 text-2xl"></i>
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-800">Other Skills</h3>
+                        <p class="text-gray-600">DevOps, Agile, Communication</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="bg-gray-100 py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-semibold text-indigo-700 mb-8 text-center">Experience</h2>
+            <div class="space-y-8">
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <h3 class="text-xl font-semibold text-indigo-600 mb-2">Machine Learning Engineer</h3>
+                    <p class="text-gray-700 mb-2"><span class="font-semibold">Quantiphi Analytics, Mumbai</span> (08/2023 - Current)</p>
+                    <ul class="list-disc list-inside text-gray-600">
+                        <li>Developed and delivered end-to-end ML solutions.</li>
+                        <li>Engaged clients and drove business impact.</li>
+                        <li>Led and mentored junior team members.</li>
+                         <li>Engineered an Intelligent E-Commerce Chatbot.</li>
+                        <li>Optimised RAG Performance with Advanced Search Capabilities.</li>
+                        <li>Enhanced Analytical Efficiency and Model Performance.</li>
+                        <li>Developed Predictive Customer Retention Solution.</li>
+                    </ul>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <h3 class="text-xl font-semibold text-indigo-600 mb-2">Machine Learning Engineer (Intern)</h3>
+                    <p class="text-gray-700 mb-2"><span class="font-semibold">Quantiphi Analytics, Mumbai</span> (01/2023 - 07/2023)</p>
+                    <ul class="list-disc list-inside text-gray-600">
+                        <li>Supported ML workflow.</li>
+                        <li>Contributed to research and experimentation.</li>
+                    </ul>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <h3 class="text-xl font-semibold text-indigo-600 mb-2">Software Developer (Intern)</h3>
+                    <p class="text-gray-700 mb-2"><span class="font-semibold">OpTAP Technology Consulting, New Delhi</span> (06/2021 - 04/2022)</p>
+                    <ul class="list-disc list-inside text-gray-600">
+                        <li>Assisted in sales forecasting.</li>
+                        <li>Streamlined data entry.</li>
+                        <li>Implemented automation.</li>
+                    </ul>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <h3 class="text-xl font-semibold text-indigo-600 mb-2">Teaching Assistant</h3>
+                    <p class="text-gray-700 mb-2"><span class="font-semibold">Coding Ninjas, New Delhi</span> (02/2022 - 04/2022)</p>
+                    <ul class="list-disc list-inside text-gray-600">
+                        <li>Guided students in CPP and DSA.</li>
+                        <li>Mentored in coding and problem-solving.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="bg-indigo-50 py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-semibold text-indigo-700 mb-8 text-center">Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <h3 class="text-xl font-semibold text-indigo-600 mb-2">AnyLabeling</h3>
+                    <p class="text-gray-700 mb-4">Integrated precomputed embedding features into the AnyLabeling AI labelling software.</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <h3 class="text-xl font-semibold text-indigo-600 mb-2">Face Recognition</h3>
+                    <p class="text-gray-700 mb-4">Developed and implemented an advanced face recognition model using the Siamese network architecture.</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <h3 class="text-xl font-semibold text-indigo-600 mb-2">Image Colorization</h3>
+                    <p class="text-gray-700 mb-4">Developed an ML model using transfer learning and GAN with U-Net architecture to colorize black-and-white images.</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <h3 class="text-xl font-semibold text-indigo-600 mb-2">Negligent Driver Behaviour Classification</h3>
+                    <p class="text-gray-700 mb-4">Created a driver behaviour classification system that detects distractions and improves safety.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="bg-gray-100 py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-semibold text-indigo-700 mb-8 text-center">Contact</h2>
+            <div class="flex flex-col md:flex-row justify-center gap-8">
+                <div class="bg-white rounded-lg shadow-md p-6 text-center">
+                    <i class="fas fa-map-marker-alt text-indigo-500 text-2xl mb-2"></i>
+                    <p class="text-gray-700">Pune, Maharashtra, 412207</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6 text-center">
+                    <i class="fas fa-phone text-indigo-500 text-2xl mb-2"></i>
+                    <p class="text-gray-700">+91 7558745091</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6 text-center">
+                    <i class="fas fa-envelope text-indigo-500 text-2xl mb-2"></i>
+                    <p class="text-gray-700">anand.071972@gmail.com</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6 text-center">
+                    <i class="fab fa-github text-indigo-500 text-2xl mb-2"></i>
+                    <p class="text-gray-700">Anand1405</p>
+                </div>
+                 <div class="bg-white rounded-lg shadow-md p-6 text-center">
+                    <i class="fab fa-linkedin text-indigo-500 text-2xl mb-2"></i>
+                    <p class="text-gray-700">Anand Kishore Jha</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-white py-4">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2024 Anand Kishore Jha. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const hamburgerBtn = document.getElementById("hamburger-btn");
+        const mobileMenu = document.getElementById("mobile-menu");
+        const closeMenuBtn = document.getElementById("close-menu-btn");
+        const mobileMenuLinks = mobileMenu.querySelectorAll("a");
+        const navLinks = document.querySelectorAll('.nav-links a');
+        const sections = document.querySelectorAll('section');
+
+        function toggleMobileMenu() {
+            mobileMenu.classList.toggle("hidden");
+        }
+
+        hamburgerBtn.addEventListener("click", toggleMobileMenu);
+        closeMenuBtn.addEventListener("click", toggleMobileMenu);
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener("click", toggleMobileMenu);
+        });
+
+        document.addEventListener('click', (event) => {
+            if (!mobileMenu.classList.contains('hidden') && !mobileMenu.contains(event.target) && event.target !== hamburgerBtn) {
+                toggleMobileMenu();
+            }
+        });
+
+       function updateActiveNavLink() {
+            let currentSectionId = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (window.scrollY >= sectionTop - 100 && window.scrollY < sectionTop + sectionHeight - 100) {
+                    currentSectionId = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').slice(1) === currentSectionId) {
+                    link.classList.add('active');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', updateActiveNavLink);
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+    </script>
+</body>
+</html>
